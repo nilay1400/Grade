@@ -1,13 +1,47 @@
-# Grade
-GRADE: A Scalable Framework for Quantitative Reliability Assessment of Deep Neural Networks
+# GRADE
 
-This is the official repository for the implementation of GRADE: A Scalable Framework for Quantitative Reliability Assessment of Deep Neural Networks. This paper presents an analytical reliability assessment technique in DNNs.
+## GRADE: A Scalable Framework for Quantitative Reliability Assessment of Deep Neural Networks
 
-## Bibtex
+Official implementation of the paper:
+
+> GRADE: A Scalable Framework for Quantitative Reliability Assessment of Deep Neural Networks
+
+published in IEEE Transactions on Reliability, 2026.
+
+## Overview
+
+GRADE is a scalable analytical framework for quantitative reliability assessment of Deep Neural Networks (DNNs). The framework estimates the reliability of DNNs under hardware faults without requiring extensive fault-injection campaigns, enabling efficient reliability analysis for large-scale models.
+
+## Features
+
+- Analytical reliability estimation
+- Scalable to large DNN architectures
+- Reduced computational cost compared to exhaustive fault injection
+- Supports reliability evaluation under hardware-induced faults
+
+## Repository Structure
+
+```text
+├── resnet_grade.py          # Reliability analysis for a sample DNN
+└── README.md
+
+## Requirements
+- Python 3.10+
+- PyTorch 2.x
+- NumPy
+
+## Quick Start
+Run reliability analysis for ResNet:
+```bash
+   python3 resnet_grade.py
+
+## Citation
+If you use this work in your research, please cite:
+
    ```bash
-      @article{grade2026,
+      @article{nazari2026grade,
         title={GRADE: A Scalable Framework for Quantitative Reliability Assessment of Deep Neural Networks},
-        author={Samira Nazari,Ali Azarpeyvand,Mohsen Afsharchi},
-        journal={IEEE Transaction on Reliability},
+        author={Nazari, Samira and Azarpeyvand, Ali and Afsharchi, Mohsen},
+        journal={IEEE Transactions on Reliability},
         year={2026}
-      }  
+      }
